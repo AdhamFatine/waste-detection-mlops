@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+streamlit
+requests
+pandas
+folium
+streamlit-folium
+mlflow
+pillow
+sqlalchemy
+pytest
+httpx
+prometheus-client

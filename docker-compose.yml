@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+
+    ports:
+      - "8001:8000"
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+
+    ports:
+      - "8502:8501"
+
+    depends_on:
+      - api
